@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Exploding Head Reddit Posts",
+  "version": "1.0",
+  "description": "Hides all Reddit posts with 🤯 in the title",
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": []
+}
